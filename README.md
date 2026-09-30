@@ -39,7 +39,9 @@ npm start
 
 详细配置入口：`/api/setup-guide`。实现参考[高德官方安全代理说明](https://lbs.amap.com/api/javascript-api-v2/guide/abc/jscode)和[官方 GPS 坐标转换说明](https://lbs.amap.com/api/javascript-api-v2/guide/transform/convertfrom)。
 
-## 界面配色
+## 界面文案与配色
+
+首页标题为“把走过的风景，写成时光的诗。”，表达照片与足迹承载回忆的主题。
 
 采用柔和蓝色系的马卡龙配色：冰蓝白背景、雾蓝色主按钮、浅天蓝装饰与蓝色地图标记、深蓝灰文字。配置说明页和网站图标使用同一色系。
 
