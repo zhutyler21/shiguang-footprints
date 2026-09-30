@@ -46,3 +46,6 @@ Thumbs.db
 *.swp
 *.swo
 *~
+
+# Sites 云端版由独立源码仓库管理
+/cloud/

@@ -120,6 +120,12 @@ npm run build
 
 ## Git 与文档
 
-本目录为独立本地 Git 仓库（main），首次提交名称为“首次提交”；未配置远程仓库，未改动上层知识库的 Git 配置及暂存区。`.gitignore` 保留已有规则，忽略密钥、本地环境、数据库、照片、依赖、构建和日志。提交前用 `git status --short` 与 `git check-ignore -v <路径>` 检查。
+本目录为独立 Git 仓库（main），首次提交名称为“首次提交”；公开源码仓库为 [zhutyler21/shiguang-footprints](https://github.com/zhutyler21/shiguang-footprints)，远程名称 origin。未改动上层知识库的 Git 配置及暂存区。`.gitignore` 保留已有规则，忽略密钥、本地环境、数据库、照片、依赖、构建和日志。提交前用 `git status --short` 与 `git check-ignore -v <路径>` 检查。
 
 源码可修改后用 `npm run dev` 调试；交付保持本地版，无公开部署或云端照片存储。功能计划见 `照片打卡网页MVP开发计划.md`，协作约定见 `AGENTS.md`，变更与验证边界见 `CHANGELOG.md`。
+
+## Sites 云端版（2026-09-30 新增）
+
+用户要求发布上线，新增独立 `cloud/` 云端版本，保留本地 MVP。云端运行 React + Vite 与 Cloudflare Workers，使用 D1 保存记录、R2 保存照片；初始采用 Sites 所有者私有访问。云端存储与本机数据独立，本机已有照片和记录不迁移。无多用户隔离，不直接切换为公开访问。云端环境变量通过 Sites 管理，高德安全密钥保持服务端使用。
+
+云端构建、接口、数据库字段及迁移、补偿机制和待验收边界见 `cloud/README.md`。云端过期临时照片与删除队列在后续上传/删除请求中清理，没有无人访问期间的定时清理保证；格式/尺寸/容器校验不等同于本地 sharp 的完整像素解码。`cloud/` 拥有独立 Sites 源码仓库；本地 Git 不追踪该嵌套仓库。
