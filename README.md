@@ -39,6 +39,10 @@ npm start
 
 详细配置入口：`/api/setup-guide`。实现参考[高德官方安全代理说明](https://lbs.amap.com/api/javascript-api-v2/guide/abc/jscode)和[官方 GPS 坐标转换说明](https://lbs.amap.com/api/javascript-api-v2/guide/transform/convertfrom)。
 
+## 界面配色
+
+采用橘色与金黄色的马卡龙配色：奶油白背景、杏橘色主按钮、柔和金黄装饰与地图标记、暖棕文字。配置说明页和网站图标使用同一色系。
+
 ## 使用步骤
 
 1. 点击上传区或拖入 **一张** JPEG、PNG、WebP（最大 20 MB）。暂不支持 HEIC；需先转换。不支持动画图片，解码像素上限为 8000 万。服务端读取实际格式并验证解码，不依据文件扩展名或 MIME 判断。
